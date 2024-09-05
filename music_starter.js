@@ -3,6 +3,16 @@
 let eyeblink=100
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
   background(73,63,94)
+  //cauldron
+  beginShape()
+  fill(0)
+  vertex(90,800)
+  vertex(40,680)
+  vertex()
+  vertex()
+  vertex()
+  vertex()
+  endShape()
   //hairback
   beginShape()
 fill(170,80,200)
