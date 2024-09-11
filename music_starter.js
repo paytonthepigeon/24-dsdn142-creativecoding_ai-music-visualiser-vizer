@@ -1,6 +1,7 @@
 
 // vocal, drum, bass, and other are volumes ranging from 0 to 100
-let eyeblink=100
+var eyeblink=100
+let eyewidth=50
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
 // background(73,63,94);
    //ellipse(10+Xmove,100,45,45);  //cauldron
@@ -41,21 +42,26 @@ endShape()
 
  fill(206, 87, 63)
  ellipse(920,380,100)
-noStroke()
+
    fill(140,200,100)
-   ellipse(775,325,50,eyeblink)
+   ellipse(775,325,eyewidth,eyeblink)
    
    fill(140,200,100)
-   ellipse(875,325,50,eyeblink)
+   ellipse(875,325,eyewidth,eyeblink)
+ eyeblink = eyeblink -4;
+ if (eyeblink < -5)
+  eyeblink =100
+
+
    
 
 
 
- fill(69)
- for(let i =0;i < 6;i++)
- {
-  ellipse(50+100*i,70,70)
- }
+//  fill(69)
+//  for(let i =0;i < 6;i++)
+//  {
+//   ellipse(50+100*i,70,70)
+//  }
 //coat base
    beginShape()
     fill(20,30,60)
@@ -161,4 +167,4 @@ endShape()
     // display "words"
     textAlign(CENTER);
     textSize(vocal);
-   text(words, width/2, height/3);
+   text(words, width/8, height/10);

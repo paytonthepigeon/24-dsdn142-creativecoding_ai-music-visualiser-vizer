@@ -1,4 +1,4 @@
-let angle = 0;
+let angle = 2;
 let r = 150;
 let vocal_history = [];
 
@@ -11,13 +11,13 @@ function add_to_history(history, d) {
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
 background("#fae")
 add_to_history(vocal_history, vocal);
-circle(10,10,10)
+circle(100,10,10)
 angleMode(RADIANS)
 push()
 
 //console.log(test)
 translate(height/2, width/2)
-r = drum * 2
+r = vocal * 2
 
 strokeWeight(16);
 stroke(0);

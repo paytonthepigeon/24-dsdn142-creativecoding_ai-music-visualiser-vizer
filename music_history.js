@@ -21,7 +21,7 @@ function add_to_history(history, d) {
 }
 
 function draw_one_frame(words,vocal, drum, bass, other) {
-  background(20);
+  //background(20);
 
   add_to_history(vocal_history, vocal);
   add_to_history(drum_history, drum);
