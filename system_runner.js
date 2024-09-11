@@ -1,5 +1,5 @@
-const canvasWidth = 1280 ;
-const canvasHeight = 720;
+const canvasWidth = 1250;
+const canvasHeight = 600;
 
 
 let mainCanvas;
@@ -51,7 +51,7 @@ let volume_length = 0;
 function setup() {
   main_canvas = createCanvas(canvasWidth, canvasHeight);
   main_canvas.parent('canvasContainer');
-  song = loadSound('song.mp3', songLoaded, songLoadedError, songLoadedSoFar);  
+  song = loadSound('song_orig.mp3', songLoaded, songLoadedError, songLoadedSoFar);  
   
   frameRate(60);
   angleMode(DEGREES);
