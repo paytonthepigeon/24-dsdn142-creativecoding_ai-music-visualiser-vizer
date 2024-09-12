@@ -8,16 +8,22 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
  background(73,63,94);
 //background add a witchy cabin with shelves and potions yay this gon be hard
 beginShape()
+noStroke()
 fill(97, 40, 49)
-rect(100,200,300,100)
+rect(300,200,600,600)
+
+fill(80, 40, 49)
+rect(350,250,400,150)
+fill(80, 40, 49)
+rect(350,450,400,125)
    //ellipse(10+Xmove,100,45,45); 
    //potionglow
    beginShape()
-fill(44, 82, 89, 100)
+fill(44, 150, 89, 90)
 noStroke()
-ellipse(270,490,440)
-fill(44, 87, 89, 130)
-ellipse(270,490,370)
+ellipse(270,420,440)
+fill(40, 200, 20, 95)
+ellipse(270,425,370)
     endShape()
   
    //bubbles
@@ -32,10 +38,10 @@ ellipse(270,490,370)
   ellipse(180,400,85+bubbleSizedownMap) 
  
  ellipse(390,410,100+bubbleSizeMap)
- let bubbleSizedownerMap = map(drum,0,70,0,20)
+ let bubbleSizedownererMap = map(other,0,70,0,20)
  ellipse(420,410,90+bubbleSizeMap)
-ellipse(444,430,60+bubbleSizedownerMap)
-ellipse(100,430,60+bubbleSizedownerMap)
+ellipse(444,430,60+bubbleSizedownererMap)
+ellipse(100,430,60+bubbleSizedownererMap)
   //cauldron
   beginShape()
   stroke(0)
